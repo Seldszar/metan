@@ -1,0 +1,44 @@
+{
+  "name": "metan",
+  "version": "0.0.0-development",
+  "author": "Alexandre Breteau <contact@seldszar.fr> (https://seldszar.fr)",
+  "description": "Yet another WebSocket client for Open Broadcaster",
+  "repository": "seldszar/metan",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "eslint *.{js,ts}"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "dependencies": {
+    "emittery": "^0.10.0",
+    "isomorphic-ws": "^4.0.1",
+    "simple-sha256": "^1.1.0",
+    "ws": "^8.2.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.7",
+    "typescript": "^4.4.3"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix"
+  }
+}
